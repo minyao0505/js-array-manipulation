@@ -9,9 +9,8 @@ const kata6 = (basket, groupLabel) => {
   }
   if (groupLabel) {
     return basket.every((item) => item.shippingCost > 0);
-  } else {
-    return basket.some((item) => item.shippingCost > 0);
   }
+  return basket.some((item) => item.shippingCost > 0);
 };
 
 export default kata6;
